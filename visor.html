@@ -2,9 +2,26 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Visor Simple OpenLayers</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+<title>Visor Simple OpenLayers</title>
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.12/theme/default/style.mobile.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.12/theme/default/ie6-style.min.css" />
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic" rel="stylesheet" type="text/css" />
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.12/theme/default/style.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.12/OpenLayers.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<noscript>
+	<link rel="stylesheet" href="css/skel-noscript.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	</noscript>
 	<style type="text/css">
 		html, body {
 			height: 100%;
@@ -13,16 +30,17 @@
 		}
 		.cabecera{
 			height: 50px;
-			background-color: darkblue;
+			background-color: green;
+			width: :100px;
 		}
 		.cabecera h2{
 			color: #fff;
 			margin-top: 0;
 		}
 		#mapa{
-			height: 300px;
-			width: 600px;
-			border: solid 3px darkblue;
+			height: 500px;
+			width: 800px;
+			border: solid 3px green;
 		}
 		
 	</style>
@@ -48,10 +66,39 @@
 	</script>
 </head>
 <body>
-	<div class="cabecera">
-		<h2>Visor Simple OpenLayers</h2>
+	<section id="header">
+				<header>
+					<h1>mi primer visor</h1>
+					<p>carrera de informatica</p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly scrolly-centered">Curso-gis</a>
+				</footer>
+			</section>
+		
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>Curso gis</h2>
+				</header>
+				<p>mi primer visor utilizando open layers</p>
+				<footer>
+					<a href="#first" class="button style2 scrolly">ver visor</a>
+				</footer>
+			</section>
+		
+		<!-- Feature 1 -->
+			<article id="first" class="container box style1 right"><center>
+				<div class="cabecera" ><center>
+		<h2>Visor Simple OpenLayers</h2></center>
 	</div>
 	<div id="mapa"></div>
+				</center>
+				<div class="inner">
+					
+				</div>
+			</article>
+	
 </body>
 </html>
 
